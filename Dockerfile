@@ -6,4 +6,4 @@ ADD --chmod=644 \
     https://github.com/rabbitmq/rabbitmq-delayed-message-exchange/releases/download/v${DELAYED_MESSAGE_PLUGIN_VERSION}/rabbitmq_delayed_message_exchange-${DELAYED_MESSAGE_PLUGIN_VERSION}.ez \
     $RABBITMQ_HOME/plugins/
 
-RUN rabbitmq-plugins enable rabbitmq_delayed_message_exchange
+RUN rabbitmq-plugins enable --offline rabbitmq_delayed_message_exchange
